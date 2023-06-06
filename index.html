@@ -2,23 +2,74 @@
 <html>
 <head>
     <title>Fucen Sewing</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/logo.png" rel="icon">
+    <link href="img/logo.png" rel="apple-touch-icon">
+
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/segment-style.css">
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="slider.css">
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        #nav {
+            position: fixed;
+            top: 12px;
+            width: 94%;
+            z-index: 100;
+            /* Additional styling for your nav */
+            }
+            .hero{
+                margin-top: 100px;
+            }
+    </style>
+   <script>
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (currentScrollPos <= 0) {
+            document.getElementById("nav").style.top = "0";
+        } else if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav").style.top = "0";
+        } else {
+            document.getElementById("nav").style.top = "0";
+        }
+        prevScrollpos = currentScrollPos;
+        };
+
+    </script>
+
 </head>
-<body class="light-mode">
-    <header>
+
+
+
+<body class="light-mode" id="home">
+    <header id="nav" style="top: 12px;">
         <nav>
             <div class="logo">
-                <img src="logo.png" alt="Fucen Sewing Logo">
+                <img src="images/logo.png" alt="Fucen Sewing Logo">
             </div>
+
             <ul>
                 <li><a href="#home">Home</a></li>
+                <li><i class="dropdown"></i> <a href="#segment">Segment</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <li><a href="gallery.html">Gallery</a></li> 
             </ul>
+            
             <!--<div class="mode-toggle">
                 <label class="switch">
                     <input type="checkbox" id="modeToggle">
@@ -28,20 +79,173 @@
         </nav>
     </header>
 
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-content">
             <h1>Welcome to Fucen Sewing</h1>
-            <p>Discover a world of creativity through our premium industrial sewing machines.</p>
+            <p style="font-family: 'Lora', serif; font-size: 31px;">Discover a world of creativity through our premium industrial sewing machines.</p>
             <a href="products.html" class="cta-button">Shop Now</a>
         </div>
     </section>
+
+
+
+    <section class="content" id="segment">
+        <h1 style="text-align: center">Segments</h1>
+        <div class="container">
+          <div class="column">
+            <div class="image-container">
+              <img src="img/Banner/Industrial Sewing Machine for Automobile Sector.jpeg" alt="Image">
+            </div>
+            <div class="content-details">
+              <h2>Auto Mobile</h2>
+              <a href="products.html" class="cta-button">Shop Now</a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image-container">
+              <img src="img/Banner/Industrial-Sewing-Machine-for-HealthCare-Sector.jpeg" alt="Image">
+            </div>
+            <div class="content-details">
+              <h2>Health Care</h2>
+              <a href="products.html" class="cta-button">Shop Now</a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image-container">
+              <img src="img/Banner/Industrial-Sewing-Machine-for-Hospitality-Sector.jpeg" alt="Image">
+            </div>
+            <div class="content-details">
+              <h2>Hospitality</h2>
+              <a href="products.html" class="cta-button">Shop Now</a>
+            </div>
+          </div>
+          <div class="column center">
+            <div class="image-container">
+              <img src="img/Banner/Industrial-Sewing-Machine-for-Garment-Sector.jpeg" alt="Image">
+            </div>
+            <div class="content-details">
+              <h2>Garment</h2>
+              <a href="products.html" class="cta-button">Shop Now</a>
+            </div>
+          </div>
+          <div class="column center">
+            <div class="image-container">
+              <img src="img/Banner/Industrial-Sewing-Machine-for-Footwear-Sectors.jpeg" alt="Image">
+            </div>
+            <div class="content-details">
+              <h2>Leather</h2>
+              <a href="products.html" class="cta-button">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+   <!-- 
+    <section class="content" id="segment">
+        <h1 style="text-align: center">Segments</h1>
+        <div class="container" style="border-radius: 50px;">
+            <div class="column">
+                <div class="image-container">
+                    
+                    <img src="img/Banner/Industrial Sewing Machine for Automobile Sector.jpeg" alt="Image">
+                </div>
+                <div class="content-details">
+                    <h2>Auto Mobile</h2>
+                    
+                    <a href="products.html" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="img/Banner/Industrial-Sewing-Machine-for-HealthCare-Sector.jpeg" alt="Image">
+                </div>
+                <div class="content-details">
+                    <h2>Health Care</h2>
+                    
+                    <a href="products.html" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="img/Banner/Industrial-Sewing-Machine-for-Hospitality-Sector.jpeg" alt="Image">
+                </div>
+                <div class="content-details">
+                    <h2>Hospitality</h2>
+                   
+                    <a href="products.html" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="img/Banner/Industrial-Sewing-Machine-for-Garment-Sector.jpeg" alt="Image">
+                </div>
+                <div class="content-details">
+                    <h2>Garment</h2>
+               
+                    <a href="products.html" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="img/Banner/Industrial-Sewing-Machine-for-Footwear-Sectors.jpeg" alt="Image">
+                </div>
+                <div class="content-details">
+                    <h2>Leather</h2>
+                    <a href="products.html" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+-->
+<!--
+    <div class="row-1">
+        <img src="img/Banner/Industrial Sewing Machine for Automobile Sector.jpeg" alt="Image 1">
+        <div class="content">
+          <h2>Auto Mobile</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices iaculis enim id sagittis. Mauris vitae ultrices velit. Integer vel nibh auctor, finibus massa non, dignissim arcu.</p>
+        </div>
+      </div>
+      <div class="row-separator"></div>
+      <div class="row-1 reverse">
+        <div class="content">
+          <h2>Health Care</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices iaculis enim id sagittis. Mauris vitae ultrices velit. Integer vel nibh auctor, finibus massa non, dignissim arcu.</p>
+        </div>
+        <img src="img/Banner/Industrial-Sewing-Machine-for-HealthCare-Sector.jpeg" alt="Image 2">
+      </div>
+      <div class="row-separator"></div>
+      <div class="row-1">
+        <img src="img/Banner/Industrial-Sewing-Machine-for-Hospitality-Sector.jpeg" alt="Image 3">
+        <div class="content">
+          <h2>Hospitality</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices iaculis enim id sagittis. Mauris vitae ultrices velit. Integer vel nibh auctor, finibus massa non, dignissim arcu.</p>
+        </div>
+      </div>
+      <div class="row-separator"></div>
+      <div class="row-1 reverse">
+        <div class="content">
+          <h2>Garment</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices iaculis enim id sagittis. Mauris vitae ultrices velit. Integer vel nibh auctor, finibus massa non, dignissim arcu.</p>
+        </div>
+        <img src="img/Banner/Industrial-Sewing-Machine-for-Garment-Sector.jpeg" alt="Image 4">
+      </div>
+      <div class="row-separator"></div>
+      <div class="row-1">
+        <img src="img/Banner/Industrial-Sewing-Machine-for-Leather-Sector.jpeg" alt="Image 5">
+        <div class="content">
+          <h2>Leather</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices iaculis enim id sagittis. Mauris vitae ultrices velit. Integer vel nibh auctor, finibus massa non, dignissim arcu.</p>
+        </div>
+      </div>
     
-    
+    -->
     <section class="page-content" id="products">
         <h1>Our Products</h1>
         <div class="product-list">
             <div class="product">
-                <img src="product1.jpg" alt="Product Image">
+                <img src="images/product1.jpg" alt="Product Image">
                 <h2>FC-0302</h2>
                 <p>
                     Single Needle, Bottom And Variable Top Feed, Lockstitch Sewing Machine.
@@ -49,29 +253,32 @@
                 <p class="price">$599.99</p>
             </div>
             <div class="product">
-                <img src="product2.jpg" alt="Product Image">
+                <img src="images/product2.jpg" alt="Product Image">
                 <h2>FC-0303</h2>
                 <p>Single Needle, Bottom And Variable Top Feed, Lockstitch Sewing Machine</p>
                 <p class="price">$799.99</p>
             </div>
             <div class="product">
-                <img src="product3.jpg" alt="Product Image">
+                <img src="images/product3.jpg" alt="Product Image">
                 <h2>FC-0303-D4</h2>
                 <p>Computerized Direct Drive, Single Needle Flat Bed Top and Bottom Feed Heavy Duty Lockstitch Sewing Machine</p>
                 <p class="price">$999.99</p>
             </div>
+        </div>
+        <div class="prod-btn">
+            <a href="products.html" class="cta-button">See More</a>
         </div>
     </section>
 
    
     
     <section class="content" id="about">
-        <h2 style="text-align: center">About us</h2>
+        <h2 style="text-align: center; color: black; margin-top: 30px;">About us</h2>
         <div class="container">
             <div class="column">
                 <div class="image-container">
                     
-                    <img src="image1.jpg" alt="Image">
+                    <img src="images/image1.jpg" alt="Image">
                 </div>
                 <div class="content-details">
                     <h2>Our Mission</h2>
@@ -80,7 +287,7 @@
             </div>
             <div class="column">
                 <div class="image-container">
-                    <img src="image2.jpg" alt="Image">
+                    <img src="images/image2.jpg" alt="Image">
                 </div>
                 <div class="content-details">
                     <h2>Innovation and Excellence</h2>
@@ -89,7 +296,7 @@
             </div>
             <div class="column">
                 <div class="image-container">
-                    <img src="image3.jpg" alt="Image">
+                    <img src="images/image3.jpg" alt="Image">
                 </div>
                 <div class="content-details">
                     <h2>Customer-centric Approach</h2>
@@ -103,7 +310,7 @@
     
     <section id="contact" class="section" id="contact">
         <div class="contact-content">
-            <h2>Contact Us</h2>
+            <h1 style="text-align: center; color: black; margin-top: 30px;">Contact Us</h1>
             <form>
                 <input type="text" name="name" placeholder="Your Name">
                 <input type="email" name="email" placeholder="Your Email">
@@ -144,166 +351,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Fucen Sewing. All rights reserved.</p>
+            <p>&copy; 2023 Fucen Sewing. All rights reserved. Designed by Suraj Yadav</p>
             <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
 </body>
 </html>
-
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Fucen Sewing</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="animations.css">
-    <link rel="stylesheet" type="text/css" href="slider.css">
-    <script src="script.js"></script>
-</head>
-<body class="light-mode">
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Fucen Sewing Logo">
-            </div>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="products.php">Products</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-            <div class="mode-toggle">
-                <label class="switch">
-                    <input type="checkbox" id="modeToggle">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Fucen Sewing</h1>
-            <p>Discover a world of creativity through our premium industrial sewing machines.</p>
-            <a href="products.php" class="cta-button">Shop Now</a>
-        </div>
-    </section>
-
-    <section class="content">
-        <div class="container">
-            <?php
-            // Sample dynamic content
-            $content = [
-                [
-                    'image' => 'image1.jpg',
-                    'title' => 'Quality Products',
-                    'description' => 'Explore our wide range of high-quality industrial sewing machines that meet your needs and enhance your productivity.'
-                ],
-                [
-                    'image' => 'image2.jpg',
-                    'title' => 'Innovation and Excellence',
-                    'description' => 'We are committed to continuous improvement, delivering innovative solutions that drive efficiency and customer satisfaction.'
-                ],
-                [
-                    'image' => 'image3.jpg',
-                    'title' => 'Customer-centric Approach',
-                    'description' => 'Customer satisfaction is at the core of our business. We provide excellent support and strive to exceed expectations.'
-                ]
-            ];
-
-            // Loop through the dynamic content and generate HTML for each column
-            foreach ($content as $item) {
-                echo '<div class="column">';
-                echo '<div class="image-container">';
-                echo '<img src="' . $item['image'] . '" alt="Image">';
-                echo '</div>';
-                echo '<div class="content-details">';
-                echo '<h2>' . $item['title'] . '</h2>';
-                echo '<p>' . $item['description'] . '</p>';
-                echo '</div>';
-                echo '</div>';
-            }
-            ?>
-        </div>
-    </section>
-
-    <section class="testimonial">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <div class="testimonial-slider">
-              
-            </div>
-        </div>
-    </section>
-
-    <section class="interactive">
-        <div class="container">
-            <h2>Interactive Features</h2>
-            <div class="feature">
-                <i class="fa fa-info-circle"></i>
-                <h3>Product Tooltips</h3>
-                <p>Hover over the products to get detailed information and specifications.</p>
-            </div>
-            <div class="feature">
-                <i class="fa fa-comments"></i>
-                <h3>Live Chat Support</h3>
-                <p>Get instant help and assistance from our friendly customer support team.</p>
-            </div>
-            <div class="feature">
-                <i class="fa fa-video"></i>
-                <h3>Product Demos</h3>
-                <p>Watch videos showcasing our sewing machines in action.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-            <h3>Indian Business Partner</h3>
-            <p>STI Apparel Automation Pvt Ltd</p>
-            <p>B-42, Phase-I, Okhla Industrial Area,</p>
-            <p>New Delhi - 110020, India</p>
-            <p>GET IN TOUCH</p>
-            <p>T +91 9999 909 007</p>
-            <p>Email: leads@stiaapl.com</p>
-            <a href="https://www.google.com/maps" target="_blank">Open in Google Maps</a>
-            </div>
-            <div class="footer-column">
-            <h3>Head Office</h3>
-            <p>Fucen Sewing Machine Co. Pte. Ltd.</p>
-            <p>#68, Circular Road, #02-01,</p>
-            <p>Singapore - 049422</p>
-            <p>Tel: +86-576-88220283</p>
-            <p>Fax: +86-576-88220287</p>
-            <p>Email: info@fucen-sewing.com</p>
-            </div>
-            <div class="footer-column">
-            <h3>Hong-Kong Office</h3>
-            <p>Fucen Sewing Machine Co. Ltd.</p>
-            <p>414, 4/F, International Plaza,</p>
-            <p>20 Sheung Yuet Road,</p>
-            <p>Kowloon Bay, Kowloon, Hong Kong</p>
-            <p>Email: info@fucen-sewing.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Fucen Sewing. All rights reserved.</p>
-            <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </footer>
-
-
-
-</body>
-</html>
-        -->

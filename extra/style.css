@@ -1,0 +1,67 @@
+.page-title {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+body {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .row-1 {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 20px;
+  }
+  
+  .row-1 img {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    flex-shrink: 0;
+    border-radius: 28%;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .row-1 img:hover {
+    transform: scale(1.1);
+  }
+  
+  .row-1 .content {
+    width: 60%;
+    font-size: 24px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.5;
+  }
+  
+  .row-separator {
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
+  .row-1:nth-child(even) .content {
+    background-color: #000000;
+  }
+  
+
+
+
+
+  .prod-btn{
+    text-align: center;
+    margin-top: 20px;
+    
+  }
